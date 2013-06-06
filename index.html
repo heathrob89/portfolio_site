@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta charset="utf-8">
+		<title>Heath Robbins' Portfolio</title> 
+		<style type="text/css">
+			body {background-image: url('texture.png');
+				}
+			#container {
+				margin: 0 auto;
+			}
+			#header {height: 50px;
+					}
+			#nav {
+				margin: 0 auto;
+				margin-left:-20px;
+				height: 150px;
+				width: 1200px;
+				background-color: #EE8600;
+				color: white;
+				padding-top: 50px;
+				padding-left: 80px;
+				font-family: Futura; 
+				font-style: Regular;
+				font-size: 25px;
+				background-image:url('ink.png');
+				}
+			#intro {
+				margin-left: 125px;
+			}
+			#content {
+				margin: 0 auto;
+				color: white;
+				padding-top: 50px;
+				padding-left: 80px;
+				font-family: Futura; 
+				font-style: Regular;
+					 }
+			#footer {
+				margin-bottom: 30px;
+			}
+			#type {
+				font-family: courier;
+				position: relative;
+				margin: 0 auto;
+				padding: 50px;
+				font-size: 20px;
+				  }
+			#highlight {
+				background-color: #F7C280;
+			}
+			.line {
+				color: #EE8600;
+			}
+			h2 {
+				color: #EE8600;
+			}
+
+			hr {
+				margin: 0;
+				padding: 0;
+				width: 1100px;
+			}
+				
+			
+			
+
+			.spinner {
+		   
+		    font-size: 100px; 
+		    width: 1em;
+		    height: 1em;
+		    position: absolute;
+		    margin: 0 auto;
+		    margin-left: -20px;
+		 
+		    
+		    border-radius: 50%;
+		    background: #FF4F72; 
+		    background:
+		        linear-gradient(#EE8600 50%, #fcd883 50%), 
+		        linear-gradient(#fcd883 50%, #EE8600 50%); 
+		    background-position:
+		        0 0,    
+		        100% 0; 
+		    background-size: 50% 100%; 
+		    background-repeat: no-repeat;
+		    box-shadow:
+		        inset 0 0 0 .12em rgba(0,0,0,0.2), 
+		        0 0 0 .12em rgba(255,255,255,0.1); 
+		    opacity: 0.7;
+		    animation: rota 3s;
+			}
+			
+			.spinner:after {
+			    content: "";
+			    width: 50%;
+			    height: 50%;
+			 
+			    position: absolute;
+			    top: 25%;
+			    left: 25%;
+			 
+			    border: .12em solid rgba(255,255,255,0.3);
+			    border-radius: inherit;
+			}
+
+			#block1 {
+				display: none;
+			}
+
+
+			#block2 {
+				display: none;
+			}
+
+			#block3 {
+				display: none;
+			}
+
+
+			#block4 {
+				display: none;
+			}
+
+			#reel {
+				display: none;
+				margin: 0 auto;
+				margin-left: 220px;
+				width:;
+			}
+
+			.desc {
+				margin: 0 auto;
+				margin-left: 220px;
+
+			}
+
+
+
+			#plus1 {
+				background-image:url('plus.png');
+				cursor: hand;
+				cursor: pointer;
+				margin: 0 auto;
+				padding: 0;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				margin-left: -40px;
+
+			}
+
+			#minus1 {
+				background-image:url('minus.png');
+				cursor: hand;
+				cursor: pointer;
+				margin: 0 auto;
+				padding: 0;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				margin-left: -40px;
+
+			}
+
+			#plus2 {
+				background-image:url('plus.png');
+				cursor: hand;
+				cursor: pointer;
+				margin: 0 auto;
+				padding: 0;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				margin-left: -40px;
+
+			}
+
+			#plus3 {
+				background-image:url('plus.png');
+				cursor: hand;
+				cursor: pointer;
+				margin: 0 auto;
+				padding: 0;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				margin-left: -40px;
+
+			}
+
+			#plus4 {
+				background-image:url('plus.png');
+				cursor: hand;
+				cursor: pointer;
+				margin: 0 auto;
+				padding: 0;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				margin-left: -40px;
+
+			}
+				
+			@keyframes rota {
+			    25%  { transform: rotate(270deg); }
+			    50%  { transform: rotate( 90deg); }
+			    75%  { transform: rotate(360deg); }
+			    100% { transform: rotate(180deg); }
+			}
+
+			
+			
+			.nav-container2 { margin-left: -50px; width:940px; height:50px;}
+			.social-media-list { width: 393px; height: 50px;}
+			.social-media-list li { display:block; float: left; text-align:center; margin: 0 auto;}
+			
+
+
+
+		</style> 
+		<script src="jquery-1.10.1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="jquery-migrate-1.2.1.js"></script> 
+
+		<!--fucking cool toggling shite-->
+		<script src="plusminustoggle.js"></script>
+		<!--yeah yo-->
+
+	</header>
+	<body>
+		<div id="container">
+		<div id="header">
+		</div>
+		<div id="nav"> 
+			<section> 
+				<div class="spinner"></div>
+			</section>
+			<p id="intro"> Hello World, I'm Heath Robbins. <br> Welcome to my <bold id="highlight">online portfolio</bold>.
+			</p> 
+		</div> 
+		<div id="content"> 
+			<p id="type"> I'm a recent graduate of <i class="line">The New School</i> and am currently living in <b class="line">New York City</b>. 
+			</p>
+			<hr></hr>
+			<section class="category"> 
+				<article id="plus1"> </article>
+				<h2> Education </h2>
+				<ul id="block1">
+					<li> University of Michigan: Film </li>
+					<li> Emerson College: Animation and Motion Media </li>
+					<li> BA: The New School: Arts in Context </li> 
+				</ul> 
+			</section>
+			<section class="category"> 
+				<article id="plus2"> </article>
+				<h2> Skills </h2> 
+				<ul id="block2"> 
+					<li> HTML5 </li> 
+					<li> CSS3 </li> 
+					<li> Javascript/JQuery </li> 
+					<li> PHP </li> 
+					<li> Illustrator </li>
+					<li> In Design </li>
+					<li> Photoshop </li> 
+					<li> After Effects </li> 
+					<li> Maya </li> 
+					<li> Premiere </li>
+					<li> Final Cut Pro </li> 
+					<li> Microsoft Office </li>
+					<li> Keynote </li> 
+					<li> UX Research </li> 
+					<li> Information Architecture </li> 
+					<li> Video Production </li> 
+				</ul> 
+			</section> 
+			<section class="category"> 
+				<article id="plus3"> </article>
+				<h2> Media </h2> 
+				<ul id="block3">
+					<li> The Roots </li>
+					<li> Kallarje </li>
+					<li> Chamberlain Warden </li> 
+					<li> Flatiron Hot </li> 
+					<li> Experiential Relativity </li> 
+					<li> In Other Shoes </li> 
+				</ul>
+					<span id="reel"> 
+						<iframe width="560" height="315" src="http://www.youtube.com/embed/0Ic5Tyhx1dM" frameborder="0" allowfullscreen></iframe>
+							<div class="desc"> <p> Hello </P> </div>
+					</span>
+			</section>
+			<section class="category"> 
+				<article id="plus4"> </article>
+				<h2> Contact </h2>
+				<ul id="block4">
+					<li> heathrob89@gmail.com </li>
+					<li> info@heathrob.com </li>
+					<li> 917.403.1289 </li>
+				</ul> 
+			</section>
+		<div id="footer">
+			<div class="nav-container2">
+			    <ul class="social-media-list">
+			        <li>
+			            <a href="https://www.facebook.com/heathrob?ref=flnm" target="_blank"> <img src="facebok-icon.png" width="50" height="50" border="0"/></a>    
+			        </li>
+			        <li>
+			           	<a href="https://twitter.com/eyeoftherobbin" target="_blank"> <img src="twitter-icon.png" width= "50" height="50" border="0"/></a>		
+			        </li>
+			        <li>
+			        	<a href="http://heathrob89.tumblr.com/" target="_blank"> <img src="tumblr-icon.png" width= "50" height="50" border="0"/></a>
+			        </li> 
+			        <li>
+			        	<a href="http://lnkd.in/SUEsje" target="_blank"> <img src="linkedin-icon.png" width="50" height="50" border="0"/></a>
+			        	</a>
+			        </li>
+		   		 </ul>
+			</div>
+
+			<p> &copy; 2013 Heath Robbins </p>
+		</div>
+	</div>
+	</body> 
+</html> 
+
+
+
+
+
+
+
+
